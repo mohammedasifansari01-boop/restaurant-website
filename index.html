@@ -1,0 +1,3286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Royal Table | Premium Dining Experience</title>
+
+    <meta name="description"
+        content="The Royal Table - A premium dining experience with delicious food, elegant ambience and unforgettable moments.">
+
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- PREMIUM OPENING LOADER -->
+
+    <div id="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="images/logo/logo.png" alt="The Royal Table">
+            </div>
+            <div class="loader-line"></div>
+            <p>THE ROYAL TABLE</p>
+            <span>Good Food • Good Mood</span>
+        </div>
+    </div>
+
+   <!-- HEADER -->
+<header>
+
+    <div class="logo">
+        <a href="#home">
+            <img src="images/logo/logo.png" alt="The Royal Table Logo">
+        </a>
+    </div>
+
+
+    <!-- HAMBURGER BUTTON -->
+    <button class="menu-toggle" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" aria-label="Toggle Light and Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <a href="#reservation" class="nav-book-btn">
+        Book a Table
+    </a>
+
+</header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home">
+
+        <p>WELCOME TO</p>
+
+        <h1>The Royal Table</h1>
+
+        <h2>Good Food • Good Mood</h2>
+
+        <p>
+            Experience exceptional food, elegant ambience
+            and unforgettable moments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="primary-btn">
+                Explore Our Menu
+            </a>
+
+            <a href="#reservation" class="secondary-btn">
+                Book a Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+<section id="about">
+
+    <div class="about-image">
+        <img src="images/about/about-main.jpg" alt="The Royal Table Restaurant">
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">OUR STORY</p>
+
+        <h2>Where Every Meal<br>Becomes a Memory</h2>
+
+        <p>
+            At The Royal Table, we believe great food is more
+            than just a meal — it is an experience.
+        </p>
+
+        <p>
+            From carefully selected ingredients to beautifully
+            crafted dishes, every detail is created with passion
+            and attention to quality.
+        </p>
+
+        <div class="about-highlights">
+
+            <div>
+                <strong>10+</strong>
+                <span>Years of Experience</span>
+            </div>
+
+            <div>
+                <strong>50+</strong>
+                <span>Signature Dishes</span>
+            </div>
+
+            <div>
+                <strong>5K+</strong>
+                <span>Happy Guests</span>
+            </div>
+
+        </div>
+
+        <a href="#menu" class="about-btn">
+            Discover Our Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+    <!-- MENU SECTION -->
+<section id="menu">
+
+    <!-- SPECIAL OFFER -->
+    <div class="special-offer">
+
+        <div class="offer-content">
+            <p class="section-label">SPECIAL OFFER</p>
+
+            <h2>Royal Weekend Offer</h2>
+
+            <p>
+                Enjoy <strong>15% OFF</strong> on your food order 
+                and make your weekend extra special.
+            </p>
+
+            <a
+                href="https://wa.me/917016848452?text=Hello%20The%20Royal%20Table!%0A%0AI%20want%20to%20order%20with%20the%2015%25%20Weekend%20Offer.%0A%0APlease%20share%20the%20available%20dishes%20and%20help%20me%20place%20my%20order."
+                class="offer-btn"
+                target="_blank"
+            >
+                Order Now
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="menu-heading">
+
+        <p class="section-label">OUR MENU</p>
+
+        <h2>Signature Dishes</h2>
+
+
+        <!-- MENU FILTER BUTTONS -->
+        <div class="menu-filters">
+
+            <button class="menu-filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="menu-filter" data-filter="veg">
+                Veg
+            </button>
+
+            <button class="menu-filter" data-filter="nonveg">
+                Non-Veg
+            </button>
+
+            <button class="menu-filter" data-filter="dessert">
+                Desserts
+            </button>
+
+            <button class="menu-filter" data-filter="beverage">
+                Beverages
+            </button>
+
+        </div>
+
+
+        <p>
+            A carefully curated selection of dishes prepared
+            with fresh ingredients and royal flavours.
+        </p>
+
+    </div>
+
+
+    <!-- MENU SEARCH -->
+    <div class="menu-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+            type="text"
+            id="menu-search"
+            placeholder="Search your favourite dish..."
+        >
+    </div>
+
+    <p id="no-dishes-message" class="no-dishes-message">
+        No dishes found.
+    </p>
+
+
+    <div class="menu-grid">
+
+
+        <!-- DISH 1 - NON VEG -->
+        <div class="menu-card featured-dish" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/royal-biryani.jpg" alt="Royal Biryani">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Biryani</h3>
+                    <strong>₹249</strong>
+                </div>
+
+                <p>
+                    Fragrant basmati rice, aromatic spices and tender ingredients cooked to perfection.
+                </p>
+
+                <button class="add-to-cart" data-name="Royal Biryani" data-price="249">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 2 - VEG -->
+        <div class="menu-card featured-dish" data-category="veg">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/truffle-pasta.jpg"
+                    alt="Truffle Pasta"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Truffle Pasta</h3>
+                    <strong>₹329</strong>
+                </div>
+
+                <p>
+                    Creamy handmade pasta finished with premium truffle and parmesan.
+                </p>
+
+                <button class="add-to-cart" data-name="Truffle Pasta" data-price="329">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 3 - NON VEG -->
+        <div class="menu-card" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/royal-burger.jpg"
+                    alt="Royal Burger"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Burger</h3>
+                    <strong>₹199</strong>
+                </div>
+
+                <p>
+                    A juicy gourmet burger served with our signature Royal Table sauce.
+                </p>
+
+                <button class="add-to-cart" data-name="Royal Burger" data-price="199">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 4 - VEG -->
+        <div class="menu-card" data-category="veg">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/royal-paneer.jpg"
+                    alt="Royal Paneer"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Paneer</h3>
+                    <strong>₹279</strong>
+                </div>
+
+                <p>
+                    Soft paneer cooked in a rich creamy gravy with aromatic royal spices.
+                </p>
+
+                <button class="add-to-cart" data-name="Royal Paneer" data-price="279">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 5 - NON VEG -->
+        <div class="menu-card" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/creamy-chicken.jpg"
+                    alt="Creamy Chicken"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Creamy Chicken</h3>
+                    <strong>₹349</strong>
+                </div>
+
+                <p>
+                    Tender chicken prepared in a smooth creamy sauce with delicate herbs and spices.
+                </p>
+
+                <button class="add-to-cart" data-name="Creamy Chicken" data-price="349">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 6 - NON VEG -->
+        <div class="menu-card" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/royal-kebab.jpg"
+                    alt="Royal Kebab"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Kebab</h3>
+                    <strong>₹299</strong>
+                </div>
+
+                <p>
+                    Juicy and perfectly grilled kebabs served with our signature house dip.
+                </p>
+
+                <button class="add-to-cart" data-name="Royal Kebab" data-price="299">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 7 - VEG -->
+        <div class="menu-card" data-category="veg">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/butter-naan.jpg"
+                    alt="Butter Naan"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Butter Naan</h3>
+                    <strong>₹79</strong>
+                </div>
+
+                <p>
+                    Soft freshly baked naan finished with butter and served warm from the tandoor.
+                </p>
+
+                <button class="add-to-cart" data-name="Butter Naan" data-price="79">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 8 - DESSERT -->
+        <div class="menu-card featured-dish" data-category="dessert">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/royal-dessert.jpg"
+                    alt="Royal Dessert"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Dessert</h3>
+                    <strong>₹159</strong>
+                </div>
+
+                <p>
+                    A deliciously crafted dessert to finish your dining experience on a sweet note.
+                </p>
+
+                <button class="add-to-cart" data-name="Royal Dessert" data-price="159">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DISH 9 - DESSERT -->
+        <div class="menu-card" data-category="dessert">
+
+            <div class="menu-card-image">
+                <img
+                    src="images/menu/chocolate-cake.jpg"
+                    alt="Chocolate Cake"
+                >
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Chocolate Cake</h3>
+                    <strong>₹179</strong>
+                </div>
+
+                <p>
+                    Rich and indulgent chocolate cake with a soft centre and luxurious chocolate flavour.
+                </p>
+
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="179">
+                    <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CHICKEN TIKKA -->
+        <div class="menu-card" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-tikka.jpg" alt="Chicken Tikka">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Chicken Tikka</h3>
+                    <strong>₹299</strong>
+                </div>
+
+                <p>
+                    Juicy grilled chicken pieces marinated with aromatic spices and roasted to perfection.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Chicken Tikka"
+                    data-price="299"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PANEER TIKKA -->
+        <div class="menu-card" data-category="veg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-tikka.jpg" alt="Paneer Tikka">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Paneer Tikka</h3>
+                    <strong>₹279</strong>
+                </div>
+
+                <p>
+                    Smoky grilled paneer cubes marinated with aromatic spices, herbs and creamy yogurt.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Paneer Tikka"
+                    data-price="279"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHICKEN CURRY -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-curry.jpg" alt="Chicken Curry">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Chicken Curry</h3>
+                    <strong>₹329</strong>
+                </div>
+
+                <p>
+                    Tender chicken cooked in a rich blend of aromatic spices and creamy gravy.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Chicken Curry"
+                    data-price="329"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MUTTON BIRYANI -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-biryani.jpg" alt="Mutton Biryani">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Mutton Biryani</h3>
+                    <strong>₹399</strong>
+                </div>
+
+                <p>
+                    Fragrant basmati rice layered with tender mutton, aromatic spices and royal flavours.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Mutton Biryani"
+                    data-price="399"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHICKEN WING -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-wing.jpg" alt="Chicken Wings">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Chicken Wing</h3>
+                    <strong>₹279</strong>
+                </div>
+
+                <p>
+                    Crispy chicken wings coated with aromatic spices and served with a delicious royal dip.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Chicken Wings"
+                    data-price="279"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PANEER BUTTER MASALA -->
+        <div class="menu-card hidden-dish" data-category="veg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-butter-masala.jpg" alt="Paneer Butter Masala">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Paneer Butter Masala</h3>
+                    <strong>₹289</strong>
+                </div>
+
+                <p>
+                    Soft paneer cooked in a rich buttery tomato gravy with aromatic spices and a creamy royal flavour.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Paneer Butter Masala"
+                    data-price="289"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DAL MAKHANI -->
+        <div class="menu-card hidden-dish" data-category="veg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/dal-makhani.jpg" alt="Dal Makhani">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Dal Makhani</h3>
+                    <strong>₹229</strong>
+                </div>
+
+                <p>
+                    Slow-cooked black lentils simmered with butter, cream and aromatic spices for a rich royal taste.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Dal Makhani"
+                    data-price="229"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL MARGHERITA PIZZA -->
+        <div class="menu-card hidden-dish" data-category="veg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/royal-margherita-pizza.jpg" alt="Royal Margherita Pizza">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Margherita Pizza</h3>
+                    <strong>₹299</strong>
+                </div>
+
+                <p>
+                    Classic Italian-style pizza topped with fresh mozzarella, tomato, basil and royal herbs.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Royal Margherita Pizza"
+                    data-price="299"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ALFREDO PASTA -->
+        <div class="menu-card hidden-dish" data-category="veg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/alfredo-pasta.jpg" alt="Alfredo Pasta">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Alfredo Pasta</h3>
+                    <strong>₹319</strong>
+                </div>
+
+                <p>
+                    Creamy pasta tossed in a rich Alfredo sauce with herbs, parmesan and a touch of royal flavour.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Alfredo Pasta"
+                    data-price="319"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- VEG SPRING ROLLS -->
+        <div class="menu-card hidden-dish" data-category="veg">
+
+            <div class="menu-card-image">
+                <img src="images/menu/veg-spring-rolls.jpg" alt="Veg Spring Rolls">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Veg Spring Rolls</h3>
+                    <strong>₹199</strong>
+                </div>
+
+                <p>
+                    Crispy golden rolls filled with fresh vegetables, aromatic herbs and delicious royal seasoning.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Veg Spring Rolls"
+                    data-price="199"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- GULAB JAMUN -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+
+            <div class="menu-card-image">
+                <img src="images/menu/gulab-jamun.jpg" alt="Gulab Jamun">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Gulab Jamun</h3>
+                    <strong>₹129</strong>
+                </div>
+
+                <p>
+                    Soft golden dumplings soaked in warm saffron-infused syrup and served with a royal touch.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Gulab Jamun"
+                    data-price="129"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL CHEESECAKE -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+
+            <div class="menu-card-image">
+                <img src="images/menu/royal-cheesecake.jpg" alt="Royal Cheesecake">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Cheesecake</h3>
+                    <strong>₹219</strong>
+                </div>
+
+                <p>
+                    Creamy baked cheesecake with a smooth texture and a delicate royal dessert finish.
+                </p>
+
+                <button
+                    class="add-to-cart"
+                    data-name="Royal Cheesecake"
+                    data-price="219"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL MOJITO -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+
+            <div class="menu-card-image">
+                <img src="images/beverages/royal-mojito.jpg" alt="Royal Mojito">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Mojito</h3>
+                    <strong>₹149</strong>
+                </div>
+
+                <p>
+                    A refreshing mint and lime drink, perfect for a cool and refreshing experience.
+                </p>
+
+                <button class="add-to-cart"
+                    data-name="Royal Mojito"
+                    data-price="149"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL LEMONADE -->
+        <div class="menu-card hidden-dish featured-dish" data-category="beverage">
+
+            <div class="menu-card-image">
+                <img src="images/beverages/royal-lemonade.jpg" alt="Royal Lemonade">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Lemonade</h3>
+                    <strong>₹129</strong>
+                </div>
+
+                <p>
+                    A refreshing lemonade made with fresh lemon, chilled water and a perfect touch of sweetness.
+                </p>
+
+                <button class="add-to-cart"
+                    data-name="Royal Lemonade"
+                    data-price="129"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL COLD COFFEE -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+
+            <div class="menu-card-image">
+                <img src="images/beverages/royal-cold-coffee.jpg" alt="Royal Cold Coffee">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Cold Coffee</h3>
+                    <strong>₹159</strong>
+                </div>
+
+                <p>
+                    Rich and creamy cold coffee blended with chilled milk and a smooth coffee flavour.
+                </p>
+
+                <button class="add-to-cart"
+                    data-name="Royal Cold Coffee"
+                    data-price="159">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL STRAWBERRY SHAKE -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+
+            <div class="menu-card-image">
+                <img src="images/beverages/royal-strawberry-shake.jpg" alt="Royal Strawberry Shake">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Strawberry Shake</h3>
+                    <strong>₹179</strong>
+                </div>
+
+                <p>
+                    A creamy strawberry shake made with fresh strawberries, chilled milk and rich flavour.
+                </p>
+
+                <button class="add-to-cart"
+                    data-name="Royal Strawberry Shake"
+                    data-price="179">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL BLUE LAGOON -->
+        <div class="menu-card hidden-dish featured-dish" data-category="beverage">
+
+            <div class="menu-card-image">
+                <img src="images/beverages/royal-blue-lagoon.jpg" alt="Royal Blue Lagoon">
+            </div>
+
+            <div class="menu-card-content">
+
+                <div class="menu-title">
+                    <h3>Royal Blue Lagoon</h3>
+                    <strong>₹169</strong>
+                </div>
+
+                <p>
+                    A refreshing blue mocktail with citrus flavours, served chilled for a cool and royal experience.
+                </p>
+
+                <button class="add-to-cart"
+                    data-name="Royal Blue Lagoon"
+                    data-price="169">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEW MENU ITEMS -->
+
+        <!-- 1. Chicken Malai Tikka -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-malai-tikka.jpg" alt="Chicken Malai Tikka">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Malai Tikka</h3>
+                    <strong>₹319</strong>
+                </div>
+                <p>Soft and creamy chicken tikka marinated with rich spices and grilled to perfection.</p>
+                <button class="add-to-cart" data-name="Chicken Malai Tikka" data-price="319">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 2. Tandoori Chicken -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/tandoori-chicken.jpg" alt="Tandoori Chicken">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Tandoori Chicken</h3>
+                    <strong>₹349</strong>
+                </div>
+                <p>Juicy chicken marinated in royal spices and roasted in traditional tandoor style.</p>
+                <button class="add-to-cart" data-name="Tandoori Chicken" data-price="349">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 3. Chicken Handi -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-handi.jpg" alt="Chicken Handi">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Handi</h3>
+                    <strong>₹359</strong>
+                </div>
+                <p>Tender chicken cooked slowly in a creamy and aromatic royal gravy.</p>
+                <button class="add-to-cart" data-name="Chicken Handi" data-price="359">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 4. Mutton Rogan Josh -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-rogan-josh.jpg" alt="Mutton Rogan Josh">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Rogan Josh</h3>
+                    <strong>₹399</strong>
+                </div>
+                <p>Slow-cooked tender mutton in a rich, aromatic and flavorful royal gravy.</p>
+                <button class="add-to-cart" data-name="Mutton Rogan Josh" data-price="399">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 5. Shahi Paneer -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/shahi-paneer.jpg" alt="Shahi Paneer">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Shahi Paneer</h3>
+                    <strong>₹279</strong>
+                </div>
+                <p>Soft paneer cooked in a creamy royal gravy with aromatic Indian spices.</p>
+                <button class="add-to-cart" data-name="Shahi Paneer" data-price="279">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 6. Veg Manchurian -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/veg-manchurian.jpg" alt="Veg Manchurian">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Veg Manchurian</h3>
+                    <strong>₹219</strong>
+                </div>
+                <p>Crispy vegetable balls tossed in a delicious Indo-Chinese Manchurian sauce.</p>
+                <button class="add-to-cart" data-name="Veg Manchurian" data-price="219">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 7. Cheese Garlic Bread -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/cheese-garlic-bread.jpg" alt="Cheese Garlic Bread">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Cheese Garlic Bread</h3>
+                    <strong>₹189</strong>
+                </div>
+                <p>Golden garlic bread loaded with melted cheese and delicious herbs.</p>
+                <button class="add-to-cart" data-name="Cheese Garlic Bread" data-price="189">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 8. French Fries -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/french-fries.jpg" alt="French Fries">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>French Fries</h3>
+                    <strong>₹149</strong>
+                </div>
+                <p>Crispy golden French fries served hot with a delicious seasoning.</p>
+                <button class="add-to-cart" data-name="French Fries" data-price="149">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 9. Mango Shake -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/beverages/royal-mango-shake.jpg" alt="Mango Shake">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mango Shake</h3>
+                    <strong>₹169</strong>
+                </div>
+                <p>Thick and creamy mango shake made with rich mango flavor.</p>
+                <button class="add-to-cart" data-name="Mango Shake" data-price="169">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 10. Virgin Pina Colada -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/beverages/virgin-pina-colada.jpg" alt="Virgin Pina Colada">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Virgin Pina Colada</h3>
+                    <strong>₹179</strong>
+                </div>
+                <p>A refreshing tropical blend of creamy coconut and pineapple flavors.</p>
+                <button class="add-to-cart" data-name="Virgin Pina Colada" data-price="179">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- ADDITIONAL MENU ITEMS -->
+        <!-- ========================= -->
+
+        <!-- 11. Chicken Seekh Kebab -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-seekh-kebab.jpg" alt="Chicken Seekh Kebab">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Seekh Kebab</h3>
+                    <strong>₹329</strong>
+                </div>
+                <p>Juicy minced chicken kebabs grilled with aromatic spices and herbs.</p>
+                <button class="add-to-cart" data-name="Chicken Seekh Kebab" data-price="329">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 12. Chicken Afghani -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-afghani.jpg" alt="Chicken Afghani">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Afghani</h3>
+                    <strong>₹359</strong>
+                </div>
+                <p>Creamy Afghani-style chicken with a rich, mild and smoky flavour.</p>
+                <button class="add-to-cart" data-name="Chicken Afghani" data-price="359">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 13. Chicken Tandoori -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-tandoori.jpg" alt="Chicken Tandoori">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Tandoori</h3>
+                    <strong>₹349</strong>
+                </div>
+                <p>Tandoor-roasted chicken marinated in royal spices for a smoky finish.</p>
+                <button class="add-to-cart" data-name="Chicken Tandoori" data-price="349">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 14. Chicken Changezi -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-changezi.jpg" alt="Chicken Changezi">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Changezi</h3>
+                    <strong>₹379</strong>
+                </div>
+                <p>Tender chicken cooked in a creamy, spiced royal Mughlai gravy.</p>
+                <button class="add-to-cart" data-name="Chicken Changezi" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 15. Chicken Biryani Special -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-biryani-special.jpg" alt="Chicken Biryani Special">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Biryani Special</h3>
+                    <strong>₹329</strong>
+                </div>
+                <p>Fragrant basmati rice layered with tender chicken and royal spices.</p>
+                <button class="add-to-cart" data-name="Chicken Biryani Special" data-price="329">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 16. Mutton Kebab -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-kebab.jpg" alt="Mutton Kebab">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Kebab</h3>
+                    <strong>₹399</strong>
+                </div>
+                <p>Succulent mutton kebabs grilled with aromatic royal spices.</p>
+                <button class="add-to-cart" data-name="Mutton Kebab" data-price="399">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 17. Mutton Handi -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-handi.jpg" alt="Mutton Handi">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Handi</h3>
+                    <strong>₹429</strong>
+                </div>
+                <p>Slow-cooked tender mutton simmered in a rich traditional handi gravy.</p>
+                <button class="add-to-cart" data-name="Mutton Handi" data-price="429">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 18. Fish Tikka -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/fish-tikka.jpg" alt="Fish Tikka">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Fish Tikka</h3>
+                    <strong>₹379</strong>
+                </div>
+                <p>Tender fish marinated with aromatic spices and grilled to perfection.</p>
+                <button class="add-to-cart" data-name="Fish Tikka" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 19. Veg Kebab Platter -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/veg-kebab-platter.jpg" alt="Veg Kebab Platter">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Veg Kebab Platter</h3>
+                    <strong>₹249</strong>
+                </div>
+                <p>A royal platter of delicious vegetarian kebabs served with refreshing dips.</p>
+                <button class="add-to-cart" data-name="Veg Kebab Platter" data-price="249">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 20. Malai Kofta -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/malai-kofta.jpg" alt="Malai Kofta">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Malai Kofta</h3>
+                    <strong>₹279</strong>
+                </div>
+                <p>Soft cottage-cheese koftas served in a creamy and luxurious gravy.</p>
+                <button class="add-to-cart" data-name="Malai Kofta" data-price="279">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 21. Kadai Paneer -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/kadai-paneer.jpg" alt="Kadai Paneer">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Kadai Paneer</h3>
+                    <strong>₹269</strong>
+                </div>
+                <p>Soft paneer tossed with peppers, onions and aromatic kadai spices.</p>
+                <button class="add-to-cart" data-name="Kadai Paneer" data-price="269">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 22. Paneer Lababdar -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-lababdar.jpg" alt="Paneer Lababdar">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Paneer Lababdar</h3>
+                    <strong>₹289</strong>
+                </div>
+                <p>Rich paneer curry prepared with tomato, cream and royal spices.</p>
+                <button class="add-to-cart" data-name="Paneer Lababdar" data-price="289">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 23. Veg Kolhapuri -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/veg-kolhapuri.jpg" alt="Veg Kolhapuri">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Veg Kolhapuri</h3>
+                    <strong>₹239</strong>
+                </div>
+                <p>Mixed vegetables cooked in a bold and aromatic Kolhapuri masala.</p>
+                <button class="add-to-cart" data-name="Veg Kolhapuri" data-price="239">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 24. Mushroom Masala -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/mushroom-masala.jpg" alt="Mushroom Masala">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mushroom Masala</h3>
+                    <strong>₹249</strong>
+                </div>
+                <p>Fresh mushrooms cooked in a rich onion-tomato masala.</p>
+                <button class="add-to-cart" data-name="Mushroom Masala" data-price="249">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 25. Chilli Paneer -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/chilli-paneer.jpg" alt="Chilli Paneer">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chilli Paneer</h3>
+                    <strong>₹229</strong>
+                </div>
+                <p>Crispy paneer tossed with peppers, onions and spicy Indo-Chinese sauce.</p>
+                <button class="add-to-cart" data-name="Chilli Paneer" data-price="229">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 26. Cheese Corn Balls -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/cheese-corn-balls.jpg" alt="Cheese Corn Balls">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Cheese Corn Balls</h3>
+                    <strong>₹219</strong>
+                </div>
+                <p>Crispy golden corn and cheese bites served with a creamy dip.</p>
+                <button class="add-to-cart" data-name="Cheese Corn Balls" data-price="219">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 27. Rasmalai -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/rasmalai.jpg" alt="Rasmalai">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Rasmalai</h3>
+                    <strong>₹149</strong>
+                </div>
+                <p>Soft and creamy rasmalai soaked in rich saffron-flavoured milk.</p>
+                <button class="add-to-cart" data-name="Rasmalai" data-price="149">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 28. Brownie With Ice Cream -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/brownie-with-ice-cream.jpg" alt="Brownie With Ice Cream">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Brownie With Ice Cream</h3>
+                    <strong>₹229</strong>
+                </div>
+                <p>Warm chocolate brownie served with creamy ice cream for the perfect finish.</p>
+                <button class="add-to-cart" data-name="Brownie With Ice Cream" data-price="229">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 29. Mango Cheesecake -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/mango-cheesecake.jpg" alt="Mango Cheesecake">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mango Cheesecake</h3>
+                    <strong>₹239</strong>
+                </div>
+                <p>Silky cheesecake layered with the refreshing flavour of ripe mango.</p>
+                <button class="add-to-cart" data-name="Mango Cheesecake" data-price="239">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 30. Chocolate Lava Cake -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/chocolate-lava-cake.jpg" alt="Chocolate Lava Cake">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chocolate Lava Cake</h3>
+                    <strong>₹199</strong>
+                </div>
+                <p>Decadent chocolate cake with a warm, rich molten centre.</p>
+                <button class="add-to-cart" data-name="Chocolate Lava Cake" data-price="199">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 31. Kesar Kulfi -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/kesar-kulfi.jpg" alt="Kesar Kulfi">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Kesar Kulfi</h3>
+                    <strong>₹129</strong>
+                </div>
+                <p>Traditional creamy kulfi infused with delicate saffron and royal flavours.</p>
+                <button class="add-to-cart" data-name="Kesar Kulfi" data-price="129">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 32. Rabri -->
+        <div class="menu-card hidden-dish" data-category="dessert"> 
+            <div class="menu-card-image">
+               <img src="images/menu/rabri.jpg" alt="Rabri">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Rabri</h3>
+                    <strong>₹149</strong>
+                </div>
+                <p>Slow-reduced creamy milk dessert finished with aromatic royal flavours.</p>
+                <button class="add-to-cart" data-name="Rabri" data-price="149">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 33. Ice Cream Sundae -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/ice-cream-sundae.jpg" alt="Ice Cream Sundae">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Ice Cream Sundae</h3>
+                    <strong>₹189</strong>
+                </div>
+                <p>Creamy scoops topped with delicious sauces and elegant dessert toppings.</p>
+                <button class="add-to-cart" data-name="Ice Cream Sundae" data-price="189">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 34. Royal Falooda -->
+        <div class="menu-card hidden-dish" data-category="dessert">
+            <div class="menu-card-image">
+                <img src="images/menu/royal-falooda.jpg" alt="Royal Falooda">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Royal Falooda</h3>
+                    <strong>₹199</strong>
+                </div>
+                <p>A luxurious layered falooda with creamy milk, basil seeds and sweet toppings.</p>
+                <button class="add-to-cart" data-name="Royal Falooda" data-price="199">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 35. Watermelon Mojito -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/watermelon-mojito.jpg" alt="Watermelon Mojito">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Watermelon Mojito</h3>
+                    <strong>₹149</strong>
+                </div>
+                <p>Refreshing watermelon cooler blended with mint, lime and sparkling fizz.</p>
+                <button class="add-to-cart" data-name="Watermelon Mojito" data-price="149">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- 36. Green Apple Mojito -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/green-apple-mojito.jpg" alt="Green Apple Mojito">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Green Apple Mojito</h3>
+                    <strong>₹159</strong>
+                </div>
+                <p>Crisp green apple cooler with fresh mint, lime and refreshing fizz.</p>
+                <button class="add-to-cart" data-name="Green Apple Mojito" data-price="159">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 37. Virgin Mojito -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/virgin-mojito.jpg" alt="Virgin Mojito">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Virgin Mojito</h3>
+                    <strong>₹139</strong>
+                </div>
+                <p>Classic refreshing mint and lime cooler finished with sparkling fizz.</p>
+                <button class="add-to-cart" data-name="Virgin Mojito" data-price="139">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 38. Mango Lassi -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/mango-lassi.jpg" alt="Mango Lassi">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mango Lassi</h3>
+                    <strong>₹149</strong>
+                </div>
+                <p>Rich and creamy mango lassi made with refreshing yoghurt and ripe mango.</p>
+                <button class="add-to-cart" data-name="Mango Lassi" data-price="149">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 39. Chocolate Shake -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/chocolate-shake.jpg" alt="Chocolate Shake">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chocolate Shake</h3>
+                    <strong>₹179</strong>
+                </div>
+                <p>Thick and creamy chocolate shake with an indulgent royal flavour.</p>
+                <button class="add-to-cart" data-name="Chocolate Shake" data-price="179">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 40. Oreo Shake -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/oreo-shake.jpg" alt="Oreo Shake">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Oreo Shake</h3>
+                    <strong>₹199</strong>
+                </div>
+                <p>Thick Oreo milkshake blended into a creamy and delicious treat.</p>
+                <button class="add-to-cart" data-name="Oreo Shake" data-price="199">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 41. Peach Iced Tea -->
+        <div class="menu-card hidden-dish" data-category="beverage">
+            <div class="menu-card-image">
+                <img src="images/menu/peach-iced-tea.jpg" alt="Peach Iced Tea">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Peach Iced Tea</h3>
+                    <strong>₹149</strong>
+                </div>
+                <p>Chilled iced tea infused with sweet peach flavour and fresh citrus notes.</p>
+                <button class="add-to-cart" data-name="Peach Iced Tea" data-price="149">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- BATCH 1 - NEW MENU ITEMS -->
+
+        <!-- 1. Chicken 65 -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-65.jpg" alt="Chicken 65">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken 65</h3>
+                    <strong>₹299</strong>
+                </div>
+                <p>Crispy and spicy South Indian style chicken bites, perfectly seasoned.</p>
+                <button class="add-to-cart" data-name="Chicken 65" data-price="299">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 2. Chicken Lollipop -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-lollipop.jpg" alt="Chicken Lollipop">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Lollipop</h3>
+                    <strong>₹329</strong>
+                </div>
+                <p>Juicy chicken lollipops coated with a flavorful crispy seasoning.</p>
+                <button class="add-to-cart" data-name="Chicken Lollipop" data-price="329">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 3. Chilli Chicken -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chilli-chicken.jpg" alt="Chilli Chicken">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chilli Chicken</h3>
+                    <strong>₹319</strong>
+                </div>
+                <p>Tender chicken tossed with fresh chillies, peppers and aromatic sauces.</p>
+                <button class="add-to-cart" data-name="Chilli Chicken" data-price="319">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 4. Chicken Pepper Fry -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-pepper-fry.jpg" alt="Chicken Pepper Fry">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Pepper Fry</h3>
+                    <strong>₹339</strong>
+                </div>
+                <p>Tender chicken cooked with crushed black pepper and fragrant spices.</p>
+                <button class="add-to-cart" data-name="Chicken Pepper Fry" data-price="339">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 5. Chicken Tangdi Kebab -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-tangdi-kebab.jpg" alt="Chicken Tangdi Kebab">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Tangdi Kebab</h3>
+                    <strong>₹359</strong>
+                </div>
+                <p>Juicy chicken legs marinated in royal spices and grilled to perfection.</p>
+                <button class="add-to-cart" data-name="Chicken Tangdi Kebab" data-price="359">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 6. Hariyali Chicken Tikka -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/hariyali-chicken-tikka.jpg" alt="Hariyali Chicken Tikka">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Hariyali Chicken Tikka</h3>
+                    <strong>₹349</strong>
+                </div>
+                <p>Soft chicken pieces marinated with fresh herbs, mint and green spices.</p>
+                <button class="add-to-cart" data-name="Hariyali Chicken Tikka" data-price="349">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 7. Paneer Achari Tikka -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-achari-tikka.jpg" alt="Paneer Achari Tikka">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Paneer Achari Tikka</h3>
+                    <strong>₹289</strong>
+                </div>
+                <p>Soft paneer marinated in tangy pickle spices and grilled until smoky.</p>
+                <button class="add-to-cart" data-name="Paneer Achari Tikka" data-price="289">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 8. Hara Bhara Kebab -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/hara-bhara-kebab.jpg" alt="Hara Bhara Kebab">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Hara Bhara Kebab</h3>
+                    <strong>₹249</strong>
+                </div>
+                <p>Crispy green vegetable kebabs made with spinach, peas and aromatic herbs.</p>
+                <button class="add-to-cart" data-name="Hara Bhara Kebab" data-price="249">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 9. Mushroom Tikka -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/mushroom-tikka.jpg" alt="Mushroom Tikka">
+           </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mushroom Tikka</h3>
+                    <strong>₹269</strong>
+                </div>
+                <p>Juicy mushrooms marinated with creamy spices and grilled for a smoky finish.</p>
+                <button class="add-to-cart" data-name="Mushroom Tikka" data-price="269">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 10. Dahi Kebab -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/dahi-kebab.jpg" alt="Dahi Kebab">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Dahi Kebab</h3>
+                    <strong>₹259</strong>
+                </div>
+                <p>Delicate crispy kebabs prepared with creamy hung curd and aromatic herbs.</p>
+                <button class="add-to-cart" data-name="Dahi Kebab" data-price="259">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 11. Chicken Hyderabadi Biryani -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-hyderabadi-biryani.jpg" alt="Chicken Hyderabadi Biryani">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Hyderabadi Biryani</h3>
+                    <strong>₹349</strong>
+                </div>
+                <p>Fragrant basmati rice layered with tender chicken and rich Hyderabadi spices.</p>
+                <button class="add-to-cart" data-name="Chicken Hyderabadi Biryani" data-price="349">
+                   <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 12. Mutton Hyderabadi Biryani -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-hyderabadi-biryani.jpg" alt="Mutton Hyderabadi Biryani">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Hyderabadi Biryani</h3>
+                    <strong>₹429</strong>
+                </div>
+                <p>Slow-cooked mutton layered with aromatic basmati rice and royal spices.</p>
+                <button class="add-to-cart" data-name="Mutton Hyderabadi Biryani" data-price="429">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 13. Egg Biryani -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/egg-biryani.jpg" alt="Egg Biryani">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Egg Biryani</h3>
+                    <strong>₹249</strong>
+                </div>
+                <p>Aromatic basmati rice cooked with boiled eggs and flavorful biryani spices.</p>
+                <button class="add-to-cart" data-name="Egg Biryani" data-price="249">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 14. Paneer Biryani -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-biryani.jpg" alt="Paneer Biryani">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Paneer Biryani</h3>
+                    <strong>₹299</strong>
+                </div>
+                <p>Fragrant basmati rice cooked with soft paneer and aromatic Indian spices.</p>
+                <button class="add-to-cart" data-name="Paneer Biryani" data-price="299">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 15. Jeera Rice -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/jeera-rice.jpg" alt="Jeera Rice">
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Jeera Rice</h3>
+                    <strong>₹179</strong>
+                </div>
+                <p>Fluffy basmati rice tempered with aromatic cumin and subtle spices.</p>
+                <button class="add-to-cart" data-name="Jeera Rice" data-price="179">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- CHICKEN RESHMI KEBAB -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-reshmi-kebab.jpg" alt="Chicken Reshmi Kebab">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Reshmi Kebab</h3>
+                    <span class="price">₹369</span>
+                </div>
+                <p>Tender chicken kebabs marinated in creamy spices and grilled to perfection for a rich and smoky flavour.</p>
+                <button class="add-to-cart" data-name="Chicken Reshmi Kebab" data-price="369">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- CHICKEN ANGARA -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-angara.jpg" alt="Chicken Angara">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Angara</h3>
+                    <span class="price">₹379</span>
+                </div>
+                <p>Smoky grilled chicken cooked with rich spices and a fiery restaurant-style Angara marinade.</p>
+                <button class="add-to-cart" data-name="Chicken Angara" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- MUTTON SEEKH KEBAB -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-seekh-kebab.jpg" alt="Mutton Seekh Kebab">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Seekh Kebab</h3>
+                    <span class="price">₹399</span>
+                </div>
+                <p>Juicy minced mutton kebabs blended with aromatic spices and grilled to perfection for a smoky royal flavour.</p>
+                <button class="add-to-cart" data-name="Mutton Seekh Kebab" data-price="399">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- BUTTER CHICKEN -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/butter-chicken.jpg" alt="Butter Chicken">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Butter Chicken</h3>
+                    <span class="price">₹349</span>
+                </div>
+                <p>Tender chicken cooked in a rich, creamy tomato gravy with aromatic spices and a luxurious buttery finish.</p>
+                <button class="add-to-cart" data-name="Butter Chicken" data-price="349">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Tikka Masala -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Tikka Masala</h3>
+                    <span class="price">₹359</span>
+                </div>
+                <p>Juicy chicken tikka cooked in rich tomato gravy with aromatic spices.</p>
+                <button class="add-to-cart" data-name="Chicken Tikka Masala" data-price="359">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Korma -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-korma.jpg" alt="Chicken Korma">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Korma</h3>
+                    <span class="price">₹369</span>
+                </div>
+                <p>Tender chicken cooked in a rich, creamy gravy with aromatic spices and a royal finish.</p>
+                <button class="add-to-cart" data-name="Chicken Korma" data-price="369">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Kadai -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-kadai.jpg" alt="Chicken Kadai">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Kadai</h3>
+                    <span class="price">₹349</span>
+                </div>
+                <p>Tender chicken cooked with bell peppers, onions and aromatic kadai spices.</p>
+                <button class="add-to-cart" data-name="Chicken Kadai" data-price="349">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Bhuna -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-bhuna.jpg" alt="Chicken Bhuna">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Bhuna</h3>
+                    <span class="price">₹359</span>
+                </div>
+                <p>Tender chicken slow-cooked with caramelized onions, tomatoes and rich aromatic spices.</p>
+                <button class="add-to-cart" data-name="Chicken Bhuna" data-price="359">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Mutton Korma -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-korma.jpg" alt="Mutton Korma">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Korma</h3>
+                    <span class="price">₹429</span>
+                </div>
+                <p>Tender mutton cooked in a rich, creamy gravy with aromatic spices and a royal finish.</p>
+                <button class="add-to-cart" data-name="Mutton Korma" data-price="429">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Mutton Bhuna -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-bhuna.jpg" alt="Mutton Bhuna">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Bhuna</h3>
+                    <span class="price">₹419</span>
+                </div>
+                <p>Tender mutton slow-cooked with rich spices, caramelized onions and a flavorful thick gravy.</p>
+                <button class="add-to-cart" data-name="Mutton Bhuna" data-price="419">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Fish Curry -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/fish-curry.jpg" alt="Fish Curry">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Fish Curry</h3>
+                    <span class="price">₹379</span>
+                </div>
+                <p>Tender fish cooked in a rich, aromatic curry with traditional spices and a flavorful gravy.</p>
+                <button class="add-to-cart" data-name="Fish Curry" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Palak Paneer -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/palak-paneer.jpg" alt="Palak Paneer">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Palak Paneer</h3>
+                    <span class="price">₹279</span>
+                </div>
+                <p>Soft paneer cubes served in a rich, creamy spinach gravy with aromatic Indian spices.</p>
+                <button class="add-to-cart" data-name="Palak Paneer" data-price="279">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Matar Paneer -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/matar-paneer.jpg" alt="Matar Paneer">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Matar Paneer</h3>
+                    <span class="price">₹269</span>
+                </div>
+                <p>Soft paneer and green peas cooked in a rich tomato-based gravy with aromatic spices.</p>
+                <button class="add-to-cart" data-name="Matar Paneer" data-price="269">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Kaju Curry -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/kaju-curry.jpg" alt="Kaju Curry">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Kaju Curry</h3>
+                    <span class="price">₹299</span>
+                </div>
+                <p>Rich and creamy cashew curry prepared with aromatic spices and a luxurious royal gravy.</p>
+                <button class="add-to-cart" data-name="Kaju Curry" data-price="299">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Paneer Tikka Masala -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-tikka-masala.jpg" alt="Paneer Tikka Masala">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Paneer Tikka Masala</h3>
+                    <span class="price">₹299</span>
+                </div>
+                <p>Grilled paneer tikka simmered in a rich, creamy tomato gravy with aromatic spices.</p>
+                <button class="add-to-cart" data-name="Paneer Tikka Masala" data-price="299">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Paneer Do Pyaza -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/paneer-do-pyaza.jpg" alt="Paneer Do Pyaza">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Paneer Do Pyaza</h3>
+                    <span class="price">₹289</span>
+                </div>
+                <p>Soft paneer cooked with generous onions, rich spices and a flavorful restaurant-style gravy.</p>
+                <button class="add-to-cart" data-name="Paneer Do Pyaza" data-price="289">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Veg Handi -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/veg-handi.jpg" alt="Veg Handi">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                   <h3>Veg Handi</h3>
+                    <span class="price">₹289</span>
+                </div>
+                <p>Fresh vegetables cooked in a traditional handi with rich gravy and aromatic restaurant-style spices.</p>
+                <button class="add-to-cart" data-name="Veg Handi" data-price="289">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Veg Kofta Curry -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+               <img src="images/menu/veg-kofta-curry.jpg" alt="Veg Kofta Curry">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Veg Kofta Curry</h3>
+                    <span class="price">₹299</span>
+                </div>
+                <p>Soft vegetable koftas served in a rich, creamy gravy with aromatic restaurant-style spices.</p>
+                <button class="add-to-cart" data-name="Veg Kofta Curry" data-price="299">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Navratan Korma -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/navratan-korma.jpg" alt="Navratan Korma">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Navratan Korma</h3>
+                    <span class="price">₹319</span>
+                </div>
+                <p>A royal mix of vegetables, nuts and paneer cooked in a rich, creamy and aromatic gravy.</p>
+                <button class="add-to-cart" data-name="Navratan Korma" data-price="319">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Afghani Malai Chicken Tikka -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/afghani-malai-chicken-tikka.jpg" alt="Afghani Malai Chicken Tikka">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Afghani Malai Chicken Tikka</h3>
+                    <span class="price">₹379</span>
+                </div>
+                <p>Juicy chicken tikka marinated in creamy malai, aromatic herbs and royal spices.</p>
+                <button class="add-to-cart" data-name="Afghani Malai Chicken Tikka" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Malai Boti -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-malai-boti.jpg" alt="Chicken Malai Boti">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Malai Boti</h3>
+                    <span class="price">₹369</span>
+               </div>
+                <p>Tender chicken pieces marinated in creamy malai, herbs and aromatic spices, grilled to perfection.</p>
+                <button class="add-to-cart" data-name="Chicken Malai Boti" data-price="369">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chana Masala -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/chana-masala.jpg" alt="Chana Masala">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chana Masala</h3>
+                    <span class="price">₹229</span>
+                </div>
+                <p>Slow-cooked chickpeas prepared in a rich tomato gravy with aromatic Indian spices.</p>
+                <button class="add-to-cart" data-name="Chana Masala" data-price="229">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Dum Aloo Banarasi -->
+        <div class="menu-card hidden-dish" data-category="veg">
+            <div class="menu-card-image">
+                <img src="images/menu/dum-aloo-banarasi.jpg" alt="Dum Aloo Banarasi">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Dum Aloo Banarasi</h3>
+                    <span class="price">₹279</span>
+                </div>
+                <p>Baby potatoes slow-cooked in a rich Banarasi gravy with aromatic spices and a royal finish.</p>
+                <button class="add-to-cart" data-name="Dum Aloo Banarasi" data-price="279">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Murgh Musallam -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/murgh-musallam.jpg" alt="Murgh Musallam">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Murgh Musallam</h3>
+                    <span class="price">₹449</span>
+                </div>
+                <p>Whole chicken prepared in a rich Mughlai gravy with aromatic spices and a royal presentation.</p>
+                <button class="add-to-cart" data-name="Murgh Musallam" data-price="449">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Kali Mirch -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-kali-mirch.jpg" alt="Chicken Kali Mirch">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Kali Mirch</h3>
+                    <span class="price">₹379</span>
+                </div>
+                <p>Tender chicken cooked in a creamy black pepper gravy with aromatic spices and a smoky finish.</p>
+                <button class="add-to-cart" data-name="Chicken Kali Mirch" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Mutton Nihari -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/mutton-nihari.jpg" alt="Mutton Nihari">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Mutton Nihari</h3>
+                    <span class="price">₹429</span>
+                </div>
+                <p>Slow-cooked tender mutton in a rich, aromatic gravy with traditional spices and a royal finish.</p>
+                <button class="add-to-cart" data-name="Mutton Nihari" data-price="429">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Chicken Qeema Hari Mirch -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/chicken-qeema-hari-mirch.jpg" alt="Chicken Qeema Hari Mirch">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Chicken Qeema Hari Mirch</h3>
+                    <span class="price">₹379</span>
+                </div>
+                <p>Minced chicken cooked with green chillies and aromatic Mughlai spices for a rich, flavorful taste.</p>
+                <button class="add-to-cart" data-name="Chicken Qeema Hari Mirch" data-price="379">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Sikandari Raan -->
+        <div class="menu-card hidden-dish" data-category="nonveg">
+            <div class="menu-card-image">
+                <img src="images/menu/sikandari-raan.jpg" alt="Sikandari Raan">
+                <span class="menu-badge">Chef Special</span>
+            </div>
+            <div class="menu-card-content">
+                <div class="menu-title">
+                    <h3>Sikandari Raan</h3>
+                    <span class="price">₹899</span>
+                </div>
+                <p>Slow-cooked whole lamb leg marinated in royal spices, finished with saffron and aromatic herbs.</p>
+                <button class="add-to-cart" data-name="Sikandari Raan" data-price="899">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- VIEW ALL DISHES -->
+        <div class="menu-card view-all-card" id="view-all-dishes">
+
+            <div class="view-all-icon">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="view-all-content">
+                <h3>View All</h3>
+                <p>Explore All Dishes</p>
+        </div>
+
+</div>
+
+
+    </div>
+
+</section>
+
+
+    <!-- GALLERY SECTION -->
+<section id="gallery">
+
+    <div class="gallery-heading">
+
+        <p class="section-label">OUR GALLERY</p>
+
+        <h2>A Taste of The Royal Table</h2>
+
+        <p>
+            Take a glimpse into our elegant ambience,
+            delicious creations and unforgettable dining experience.
+        </p>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-1.jpg" alt="The Royal Table Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-2.jpg" alt="Dining at The Royal Table">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-3.jpg" alt="Chef at The Royal Table">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-4.jpg" alt="Signature Dish">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-5.jpg" alt="Restaurant Ambience">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-6.jpg" alt="Royal Table Dessert">
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- RESERVATION SECTION -->
+<section id="reservation">
+
+    <div class="reservation-content">
+
+        <p class="section-label">RESERVATIONS</p>
+
+        <h2>Reserve Your Table</h2>
+
+        <p>
+            Make your evening special. Reserve your table
+            and enjoy an unforgettable dining experience.
+        </p>
+
+        <form id="reservation-form">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+
+                    <select id="guests" required>
+                        <option value="">Select guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6+ Guests</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="message">Special Request</label>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Any special request?"
+                ></textarea>
+
+            </div>
+
+            <button type="submit">
+                Request a Reservation
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- CHEF'S SPECIAL SECTION -->
+
+<section id="chef-special">
+
+    <div class="chef-image">
+
+        <img
+            src="images/gallery/gallery-3.jpg"
+            alt="Chef preparing food at The Royal Table"
+        >
+
+    </div>
+
+
+    <div class="chef-content">
+
+        <p class="section-label">CHEF'S SPECIAL</p>
+
+        <h2>
+            Crafted With Passion,
+            Served With Pride
+        </h2>
+
+        <p>
+            Every dish at The Royal Table is thoughtfully
+            prepared using quality ingredients, refined
+            techniques and a passion for great food.
+        </p>
+
+        <p>
+            From the kitchen to your table, we believe
+            every plate should create a memorable experience.
+        </p>
+
+        <div class="chef-signature">
+
+            <span>THE ROYAL TABLE</span>
+
+            <small>
+                Good Food • Good Mood
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+
+    <div class="testimonials-heading">
+
+        <p class="section-label">GUEST REVIEWS</p>
+
+        <h2>What Our Guests Say</h2>
+
+        <p>
+            A few words from guests who have experienced
+            The Royal Table.
+        </p>
+
+    </div>
+
+
+    <div class="testimonial-grid">
+
+        <!-- REVIEW 1 -->
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="review">
+                “The food was absolutely delicious and the
+                ambience was beautiful. A wonderful place
+                for a special evening.”
+            </p>
+
+            <h3>Rahul Mehta</h3>
+
+            <span>Regular Guest</span>
+
+        </div>
+
+
+        <!-- REVIEW 2 -->
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="review">
+                “Amazing hospitality, beautiful presentation
+                and great flavours. Everything felt carefully
+                prepared and beautifully served.”
+            </p>
+
+            <h3>Priya Shah</h3>
+
+            <span>Happy Guest</span>
+
+        </div>
+
+
+        <!-- REVIEW 3 -->
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="review">
+                “A perfect place to enjoy great food with
+                family and friends. The experience was
+                memorable from start to finish.”
+            </p>
+
+            <h3>Arjun Patel</h3>
+
+            <span>Happy Guest</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- CONTACT SECTION -->
+<section id="contact">
+
+    <div class="contact-content">
+
+        <div class="contact-intro">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>Visit The Royal Table</h2>
+
+            <p>
+                We'd love to welcome you. Come and experience
+                great food, warm hospitality and elegant ambience.
+            </p>
+
+        </div>
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+                <span>ADDRESS</span>
+                <p>Surat, Gujarat, India</p>
+            </div>
+
+            <div class="contact-item">
+                <span>PHONE</span>
+                <p>
+                    <a href="tel:+917016848452">
+                        +91 70168 48452
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <span>EMAIL</span>
+                <p>
+                    <a href="mailto:mohammedasifansari01@gmail.com">
+                        mohammedasifansari01@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <span>OPENING HOURS</span>
+                <p>Monday – Sunday<br>11:00 AM – 11:00 PM</p>
+            </div>
+
+            <div class="restaurant-status">
+                <span class="status-dot"></span>
+                <span id="restaurant-status-text">Checking status...</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+<footer>
+
+    <div class="footer-content">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <img
+                src="images/logo/logo.png"
+                alt="The Royal Table Logo"
+            >
+
+            <h3>The Royal Table</h3>
+
+            <p>Good Food • Good Mood</p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+
+            <h4>Contact</h4>
+
+            <a href="tel:+917016848452">
+                <i class="fa-solid fa-phone"></i>
+                +91 70168 48452
+            </a>
+
+            <a href="mailto:mohammedasifansari01@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                mohammedasifansari01@gmail.com
+            </a>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Surat, Gujarat, India
+            </p>
+
+            <p>
+                <i class="fa-regular fa-clock"></i>
+                Monday – Sunday<br>
+                11:00 AM – 11:00 PM
+            </p>
+
+        </div>
+
+
+        <!-- SOCIAL -->
+        <div class="footer-social">
+
+            <h4>Follow & Contact</h4>
+
+            <div class="social-links">
+
+                <a
+                    href="https://instagram.com/asif__codes?"
+                    target="_blank"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a
+                    href="https://wa.me/917016848452"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                    title="WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a
+                    href="tel:+917016848452"
+                    aria-label="Call Us"
+                    title="Call Us"
+                >
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Us</span>
+                </a>
+
+                <a
+                    href="mailto:mohammedasifansari01@gmail.com"
+                    aria-label="Email"
+                    title="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 The Royal Table. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- SHOPPING CART -->
+<button class="cart-toggle" id="cart-toggle">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</button>
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button id="cart-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">₹0</strong>
+        </div>
+
+        <button class="clear-cart" id="clear-cart">
+            <i class="fa-solid fa-trash"></i>
+            Clear Cart
+        </button>
+
+        <button class="order-whatsapp" id="order-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a
+    href="https://wa.me/917016848452"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Chat with us on WhatsApp"
+    title="Chat with us on WhatsApp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<!-- MENU IMAGE LIGHTBOX -->
+
+<div class="image-lightbox" id="image-lightbox">
+
+    <button class="lightbox-close" id="lightbox-close">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="lightbox-image" src="" alt="">
+
+</div>
+
+
+<!-- DISH DETAILS POPUP -->
+<div class="dish-modal" id="dish-modal">
+
+    <div class="dish-modal-content">
+
+        <button class="dish-modal-close" id="dish-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <img id="dish-modal-image" src="" alt="">
+
+        <div class="dish-modal-info">
+
+            <p class="section-label">SIGNATURE DISH</p>
+
+            <h2 id="dish-modal-name"></h2>
+
+            <p id="dish-modal-description"></p>
+
+            <div class="dish-modal-bottom">
+
+                <strong id="dish-modal-price"></strong>
+
+                <button id="dish-modal-cart" class="add-to-cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- CART TOAST NOTIFICATION -->
+    <div class="cart-toast" id="cart-toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="cart-toast-message">Item added to cart</span>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
